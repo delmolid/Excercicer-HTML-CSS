@@ -1,4 +1,42 @@
-index.html
-readMe.md
-script.js
-style.css
+@media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  /* style par défaut pour grands écrans */
+body {
+    font-size: auto;
+  }
+  
+  @media (max-width: 1024px) {
+    /* style appliqué aux tablettes */
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* style appliqué aux téléphones mobiles */
+    body {
+      font-size: 14px;
+    }
+  }
+
+  button {
+    background-color: blue;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: darkblue; /* Survol */
+  }
+  
+  button:focus {
+    outline: 2px solid orange; /* Indique le focus */
+  }
+  
+  button:active {
+    background-color: navy; /* Pendant le clic */
+  }
+  

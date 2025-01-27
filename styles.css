@@ -1,30 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
 }
 
-header{
-    background-color: black;
-    color: pink;
+header {
+    background-color: rgb(162, 27, 90);
+    color: aliceblue;
+    padding: 5px;
 }
 
-.container{
+.container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+    gap: 10px;
 }
 
-@media screen and (max-widht: 300px){
-    header {
-        font-size: 0,7em;
-        
-    }
+.uneSeuleClasse {
+    padding: 4px;
+}
 
-    .container{
-        flex-direction: column;
-        
+.uneSeuleClasse:hover {
+    background-color: rgb(214, 75, 140);
+    border-radius: 6px;
+}
+
+@media screen and (max-width:300px) {
+    header {
+        font-size: 0.7em;
     }
     
+    .container {
+        flex-direction: column;
+    }
+    
+    .uneSeuleClasse {
+        width: fit-content;
+    }
 }
